@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">OttoKrauseAPP</string>
+    <string name="pretest_text">Este test tiene la finalidad de ayudar a encontrar la especialidad ""adecuada"" en base a las respuestas que nos vaya dando.
+    Se realizaran una serie de preguntas, y al final del mismo se mostrará el resultado del mismo.</string>
+    <string name="resultado_test">En base a tus respuestas, nos parece que tu especialidad es </string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bc1414"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/logo"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/goback"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/home"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/barra"
+        android:layout_width="410"
+        android:layout_height="3"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/negra"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <TextView
+        android:id="@+id/resultado_text"
+        android:layout_width="300"
+        android:layout_height="250"
+        android:text="@string/resultado_test"
+        android:textColor="#000000"
+        android:textSize="40"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <ImageView
+        android:id="@+id/especialidadlogo"
+        android:layout_width="150"
+        android:layout_height="150"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <Button
+        android:id="@+id/redireccion_button"
+        android:layout_width="250"
+        android:layout_height="75"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@mipmap/boton"
+        android:text="Ir a la especialidad"
+        android:textSize="20"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
