@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guiadelestudianteok">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SextoQuimica"></activity>
+        <activity android:name=".SextoMecanica" />
+        <activity android:name=".SextoElectronica" />
+        <activity android:name=".SextoElectrica" />
+        <activity android:name=".SextoConstrucciones" />
+        <activity android:name=".SextoComputacion" />
+        <activity android:name=".QuintoQuimica" />
+        <activity android:name=".QuintoMecanica" />
+        <activity android:name=".QuintoElectronica" />
+        <activity android:name=".QuintoElectrica" />
+        <activity android:name=".QuintoConstrucciones" />
+        <activity android:name=".QuintoComputacion" />
+        <activity android:name=".CuartoQuimica" />
+        <activity android:name=".CuartoMecanica" />
+        <activity android:name=".CuartoElectronica" />
+        <activity android:name=".CuartoElectrica" />
+        <activity android:name=".CuartoConstrucciones" />
+        <activity android:name=".CuartoComputacion" />
+        <activity android:name=".TerceroQuimica" />
+        <activity android:name=".TerceroMecanica" />
+        <activity android:name=".TerceroElectronica" />
+        <activity android:name=".TerceroElectrica" />
+        <activity android:name=".TerceroConstrucciones" />
+        <activity android:name=".Segundo" />
+        <activity android:name=".TerceroComputacion" />
+        <activity android:name=".CursoCicloSuperior" />
+        <activity android:name=".Especialidad" />
+        <activity android:name=".Primero" />
+        <activity android:name=".Curso" />
+        <activity android:name=".MenuCicloBasico" />
+        <activity android:name=".MenuEspecialidades" />
+        <activity android:name=".Mecanica" />
+        <activity android:name=".Construcciones" />
+        <activity android:name=".Quimica" />
+        <activity android:name=".Electronica" />
+        <activity android:name=".Electrica" />
+        <activity android:name=".Computacion" />
+        <activity android:name=".PlantillaEspecialidades" />
+        <activity android:name=".ActivityEspecialidades" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Especialidad">
+
+
+    <TextView
+        android:id="@+id/txv_NombreEsp"
+        android:layout_width="229dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/txt_vacio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrv1"
+        android:layout_width="0dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_NombreEsp">
+
+        <LinearLayout
+            android:id="@+id/ly_presentacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_Escudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/txt_escudo"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/txv_Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:text="@string/txt_vacio" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrv2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrv1">
+
+        <LinearLayout
+            android:id="@+id/ly_anios"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_tercero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="IrATercero"
+                android:text="@string/txt_tercero"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="417dp" />
+
+            <Button
+                android:id="@+id/btn_cuarto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="IrACuarto"
+                android:text="@string/txt_cuarto"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+            <Button
+                android:id="@+id/btn_quinto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="IrAQuinto"
+                android:text="@string/txt_quinto"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="579dp" />
+
+            <Button
+                android:id="@+id/btn_sexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:includeFontPadding="false"
+                android:onClick="IrASexto"
+                android:text="@string/txt_sexto"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="648dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuEspecialidades">
+
+
+    <Button
+        android:id="@+id/boton_Computacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:onClick="IrAComputacion"
+        android:text="@string/txt_Computacion"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Especiañidades"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/tv_Especiañidades"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Especiañidades" />
+
+    <Button
+        android:id="@+id/boton_Construcciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="IrAConstrucciones"
+        android:text="@string/txt_Construcciones"
+        app:layout_constraintEnd_toEndOf="@+id/boton_Computacion"
+        app:layout_constraintStart_toStartOf="@+id/boton_Computacion"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Computacion" />
+
+    <Button
+        android:id="@+id/boton_Electrica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="IrAElectrica"
+        android:text="@string/txt_Electrica"
+        app:layout_constraintEnd_toEndOf="@+id/boton_Construcciones"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="@+id/boton_Construcciones"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Construcciones" />
+
+    <Button
+        android:id="@+id/boton_Electronica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="IrAElectronica"
+        android:text="@string/txt_Electronica"
+        app:layout_constraintEnd_toEndOf="@+id/boton_Electrica"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/boton_Electrica"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Electrica" />
+
+    <Button
+        android:id="@+id/boton_Mecanica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="IrAMecanica"
+        android:text="@string/txt_Mecanica"
+        app:layout_constraintEnd_toEndOf="@+id/boton_Electronica"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/boton_Electronica"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Electronica" />
+
+    <Button
+        android:id="@+id/boton_Quimica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="IrAQuimica"
+        android:text="@string/txt_Quimica"
+        app:layout_constraintEnd_toEndOf="@+id/boton_Mecanica"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/boton_Mecanica"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Mecanica" />
+
+    <TextView
+        android:id="@+id/tv_Especiañidades"
+        android:layout_width="117dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_Especialidades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
