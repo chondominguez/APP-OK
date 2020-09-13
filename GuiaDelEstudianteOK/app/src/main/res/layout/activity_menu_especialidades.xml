@@ -4,91 +4,150 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#bc1414"
     tools:context=".MenuEspecialidades">
 
 
-    <Button
-        android:id="@+id/boton_Computacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:onClick="IrAComputacion"
-        android:text="@string/txt_Computacion"
-        android:textAllCaps="true"
-        app:layout_constraintEnd_toEndOf="@+id/tv_Especiañidades"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="@+id/tv_Especiañidades"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Especiañidades" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
 
-    <Button
-        android:id="@+id/boton_Construcciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:onClick="IrAConstrucciones"
-        android:text="@string/txt_Construcciones"
-        app:layout_constraintEnd_toEndOf="@+id/boton_Computacion"
-        app:layout_constraintStart_toStartOf="@+id/boton_Computacion"
-        app:layout_constraintTop_toBottomOf="@+id/boton_Computacion" />
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginTop="16dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/goback" />
 
-    <Button
-        android:id="@+id/boton_Electrica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:onClick="IrAElectrica"
-        android:text="@string/txt_Electrica"
-        app:layout_constraintEnd_toEndOf="@+id/boton_Construcciones"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="@+id/boton_Construcciones"
-        app:layout_constraintTop_toBottomOf="@+id/boton_Construcciones" />
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginBottom="12dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:srcCompat="@mipmap/home" />
+
+    <ImageView
+        android:id="@+id/barra"
+        android:layout_width="410"
+        android:layout_height="3"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/negra"
+        tools:layout_editor_absoluteY="77dp" />
 
     <Button
         android:id="@+id/boton_Electronica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="272"
+        android:layout_height="63"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/boton"
         android:onClick="IrAElectronica"
         android:text="@string/txt_Electronica"
-        app:layout_constraintEnd_toEndOf="@+id/boton_Electrica"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="@+id/boton_Electrica"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boton_Electrica" />
 
     <Button
         android:id="@+id/boton_Mecanica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="272"
+        android:layout_height="63"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/boton"
         android:onClick="IrAMecanica"
         android:text="@string/txt_Mecanica"
-        app:layout_constraintEnd_toEndOf="@+id/boton_Electronica"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="@+id/boton_Electronica"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boton_Electronica" />
 
     <Button
         android:id="@+id/boton_Quimica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="272"
+        android:layout_height="63"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/boton"
         android:onClick="IrAQuimica"
         android:text="@string/txt_Quimica"
-        app:layout_constraintEnd_toEndOf="@+id/boton_Mecanica"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/boton_Mecanica"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boton_Mecanica" />
 
-    <TextView
-        android:id="@+id/tv_Especiañidades"
-        android:layout_width="117dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/txt_Especialidades"
+    <Button
+        android:id="@+id/boton_Computacion"
+        android:layout_width="272"
+        android:layout_height="63"
+        android:layout_marginTop="72dp"
+        android:background="@mipmap/boton"
+        android:onClick="IrAComputacion"
+        android:text="@string/txt_Computacion"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/barra" />
+
+    <Button
+        android:id="@+id/boton_Electrica"
+        android:layout_width="272"
+        android:layout_height="63"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/boton"
+        android:onClick="IrAElectrica"
+        android:text="@string/txt_Electrica"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Construcciones" />
+
+    <Button
+        android:id="@+id/boton_Construcciones"
+        android:layout_width="272"
+        android:layout_height="63"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/boton"
+        android:onClick="IrAConstrucciones"
+        android:text="@string/txt_Construcciones"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Computacion" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

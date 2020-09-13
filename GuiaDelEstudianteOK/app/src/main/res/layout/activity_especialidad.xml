@@ -4,31 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#bc1414"
     tools:context=".Especialidad">
 
 
-    <TextView
-        android:id="@+id/txv_NombreEsp"
-        android:layout_width="229dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:text="@string/txt_vacio"
-        android:textSize="24sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginBottom="12dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:srcCompat="@mipmap/home" />
+
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginTop="16dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/goback" />
+
+    <ImageView
+        android:id="@+id/barra"
+        android:layout_width="410"
+        android:layout_height="3"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/negra"
+        tools:layout_editor_absoluteY="77dp" />
 
     <ScrollView
         android:id="@+id/scrv1"
         android:layout_width="0dp"
         android:layout_height="279dp"
-        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txv_NombreEsp">
+        tools:layout_editor_absoluteY="102dp">
 
         <LinearLayout
             android:id="@+id/ly_presentacion"
@@ -47,7 +84,9 @@
                 android:id="@+id/txv_Descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="159dp"
+                android:background="#FFFFFF"
                 android:text="@string/txt_vacio" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -71,44 +110,58 @@
 
             <Button
                 android:id="@+id/btn_tercero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_width="300"
+                android:layout_height="60"
+                android:background="@mipmap/boton"
                 android:onClick="IrATercero"
                 android:text="@string/txt_tercero"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="417dp" />
+                android:textSize="30"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="374dp" />
 
             <Button
                 android:id="@+id/btn_cuarto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_width="300"
+                android:layout_height="60"
+                android:background="@mipmap/boton"
                 android:onClick="IrACuarto"
                 android:text="@string/txt_cuarto"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="499dp" />
+                android:textSize="30"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="442dp" />
 
             <Button
                 android:id="@+id/btn_quinto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_width="300"
+                android:layout_height="60"
+                android:background="@mipmap/boton"
                 android:onClick="IrAQuinto"
                 android:text="@string/txt_quinto"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="579dp" />
+                android:textSize="30"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="79dp"
+                tools:layout_editor_absoluteY="512dp" />
 
             <Button
                 android:id="@+id/btn_sexto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:includeFontPadding="false"
+                android:layout_width="300"
+                android:layout_height="60"
+                android:background="@mipmap/boton"
                 android:onClick="IrASexto"
                 android:text="@string/txt_sexto"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="648dp" />
+                android:textSize="30"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="583dp" />
+
         </LinearLayout>
     </ScrollView>
 

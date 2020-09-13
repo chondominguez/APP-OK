@@ -2,55 +2,76 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstrainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#bc1414"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/boton_CicloBasico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:onClick="IrACicloBasico"
+        android:layout_width="250"
+        android:layout_height="75"
+        android:layout_marginTop="116dp"
+        android:background="@mipmap/boton"
         android:text="@string/txt_CicloBasico"
-        app:layout_constraintBottom_toTopOf="@+id/boton_Especialidad"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/boton_Especialidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
-        android:onClick="IrAMenuEspecialidades"
-        android:text="@string/txt_Especialidades"
-        app:layout_constraintBottom_toTopOf="@+id/boton_Contacto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <Button
         android:id="@+id/boton_Contacto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_width="250"
+        android:layout_height="75"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/boton"
         android:text="@string/txt_Btn_Contacto"
-        app:layout_constraintBottom_toTopOf="@+id/boton_TextVocacional"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_Especialidad" />
 
     <Button
-        android:id="@+id/boton_TextVocacional"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
-        android:text="@string/txt_Btn_TextVocacional"
+        android:id="@+id/boton_Especialidad"
+        android:layout_width="250"
+        android:layout_height="75"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/boton"
+        android:onClick="IrAMenuEspecialidades"
+        android:text="@string/txt_Especialidades"
+        android:textAllCaps="false"
+        android:textSize="30"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_CicloBasico" />
+
+    <Button
+        android:id="@+id/boton_desarrolladores"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@mipmap/developers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="146dp"
+        android:layout_height="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@mipmap/logo"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

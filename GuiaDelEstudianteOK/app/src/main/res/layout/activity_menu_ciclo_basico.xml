@@ -4,41 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#bc1414"
     tools:context=".MenuCicloBasico">
 
-    <Button
-        android:id="@+id/btn_primero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:onClick="IrAPrimerAnio"
-        android:text="@string/txt_primero"
-        app:layout_constraintEnd_toEndOf="@+id/tv_CicloBasico"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="@+id/tv_CicloBasico"
-        app:layout_constraintTop_toBottomOf="@+id/tv_CicloBasico" />
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginBottom="12dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:srcCompat="@mipmap/home" />
 
-    <Button
-        android:id="@+id/btn_segundo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:onClick="IrASegundoAnio"
-        android:text="@string/txt_segundo"
-        app:layout_constraintEnd_toEndOf="@+id/btn_primero"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginTop="16dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/goback" />
+
+    <ImageView
+        android:id="@+id/barra"
+        android:layout_width="410"
+        android:layout_height="3"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_primero"
-        app:layout_constraintTop_toBottomOf="@+id/btn_primero" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/negra"
+        tools:layout_editor_absoluteY="77dp" />
 
-    <TextView
-        android:id="@+id/tv_CicloBasico"
-        android:layout_width="109dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="52dp"
-        android:text="@string/txt_CicloBasico"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="649dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/barra">
+
+        <TextView
+            android:id="@+id/tv_CicloBasico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_CicloBasico"
+            android:textColor="#000000"
+            android:textSize="40"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toTopOf="@+id/ciclobasico_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ciclobasico_text"
+            android:layout_width="315"
+            android:layout_height="315"
+            android:layout_marginBottom="28dp"
+            android:background="#FFFFFF"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/btn_primero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_primero"
+            android:layout_width="300"
+            android:layout_height="100"
+            android:layout_marginTop="424dp"
+            android:background="@mipmap/boton"
+            android:onClick="IrAPrimerAnio"
+            android:text="@string/txt_primero"
+            android:textAllCaps="false"
+            android:textSize="30"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_segundo"
+            android:layout_width="300"
+            android:layout_height="100"
+            android:background="@mipmap/boton"
+            android:onClick="IrASegundoAnio"
+            android:text="@string/txt_segundo"
+            android:textAllCaps="false"
+            android:textSize="30"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_primero" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

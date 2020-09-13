@@ -4,13 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#bc1414"
     tools:context=".Curso">
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginBottom="12dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:srcCompat="@mipmap/home" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:layout_marginTop="16dp"
+        android:background="#bc1414"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/goback" />
+
+    <ImageView
+        android:id="@+id/barra"
+        android:layout_width="410"
+        android:layout_height="3"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/negra"
+        tools:layout_editor_absoluteY="77dp" />
 
     <TextView
         android:id="@+id/tv_curso"
         android:layout_width="411dp"
         android:layout_height="46dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="80dp"
         android:gravity="center"
         android:text="@string/txt_vacio"
         android:textSize="30sp"
@@ -30,7 +81,17 @@
             android:id="@+id/ly_materias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/anio_text2"
+                android:layout_width="match_parent"
+                android:layout_height="500"
+                android:background="#FFFFFF"
+                android:text="TextView"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="89dp" />
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
