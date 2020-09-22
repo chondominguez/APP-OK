@@ -11,11 +11,7 @@ public class CuartoConstrucciones extends CursoCicloSuperior {
     public CuartoConstrucciones(){
 
         super(
-                R.string.txt_cuarto,
-                new ArrayList<Materia>(){{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_cuarto, "eminem",
                 R.string.txt_Construcciones
         );
     }

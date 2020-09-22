@@ -11,11 +11,7 @@ public class CuartoQuimica extends CursoCicloSuperior {
     public CuartoQuimica(){
 
         super(
-                R.string.txt_cuarto,
-                new ArrayList<Materia>(){{
-                    add(new Materia("Materia 1","Simple"));
-                    add(new Materia("Materia 2","Contraturno"));
-                }},
+                R.string.txt_cuarto,"mama",
                 R.string.txt_Quimica
         );
     }

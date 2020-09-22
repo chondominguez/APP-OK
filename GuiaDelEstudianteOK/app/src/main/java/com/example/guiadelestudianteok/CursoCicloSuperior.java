@@ -9,8 +9,8 @@ import java.util.List;
 public class CursoCicloSuperior extends Curso {
     private int especialidad;
 
-    public CursoCicloSuperior(int anio, List<Materia> materias, int especialidad) {
-        super(anio, materias);
+    public CursoCicloSuperior(int anio, String descripcion, int especialidad) {
+        super(anio, descripcion);
         this.especialidad = especialidad;
     }
 

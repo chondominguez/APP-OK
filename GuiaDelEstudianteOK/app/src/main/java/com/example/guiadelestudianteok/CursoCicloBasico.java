@@ -4,8 +4,8 @@ import java.util.List;
 
 public abstract class CursoCicloBasico extends Curso {
 
-    public CursoCicloBasico(int anio, List<Materia> materias) {
-        super(anio, materias);
+    public CursoCicloBasico(int anio, String descripcion) {
+        super(anio, descripcion);
     }
 
     @Override

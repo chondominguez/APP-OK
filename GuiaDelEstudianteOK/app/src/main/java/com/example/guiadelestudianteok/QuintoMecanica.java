@@ -11,11 +11,7 @@ public class QuintoMecanica extends CursoCicloSuperior {
     public QuintoMecanica(){
 
         super(
-                R.string.txt_quinto,
-                new ArrayList<Materia>() {{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_quinto,"jarabe de palo",
                 R.string.txt_Mecanica
         );
     }

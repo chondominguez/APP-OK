@@ -11,11 +11,7 @@ public class SextoMecanica extends CursoCicloSuperior {
     public SextoMecanica(){
 
         super(
-                R.string.txt_sexto,
-                new ArrayList<Materia>() {{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_sexto,"inexistente",
                 R.string.txt_Mecanica
         );
     }

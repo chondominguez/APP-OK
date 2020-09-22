@@ -11,11 +11,7 @@ public class QuintoComputacion extends CursoCicloSuperior {
     public QuintoComputacion(){
 
         super(
-                R.string.txt_quinto,
-                new ArrayList<Materia>() {{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_quinto,"youtube",
                 R.string.txt_Computacion
         );
     }

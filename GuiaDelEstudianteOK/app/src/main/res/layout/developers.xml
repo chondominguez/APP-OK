@@ -9,105 +9,86 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="114dp"
-        android:layout_height="74dp"
+        android:layout_width="111dp"
+        android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/logo"
-        tools:layout_editor_absoluteY="3dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
 
     <ImageButton
         android:id="@+id/goback"
-        android:layout_width="50"
-        android:layout_height="50"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
         android:background="#bc1414"
         android:scaleType="centerCrop"
-        app:srcCompat="@mipmap/goback"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/goback" />
 
     <ImageButton
         android:id="@+id/home"
-        android:layout_width="50"
-        android:layout_height="50"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
         android:background="#bc1414"
         android:scaleType="centerCrop"
-        app:srcCompat="@mipmap/home"
-        tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/home" />
 
     <ImageView
         android:id="@+id/barra"
-        android:layout_width="410"
-        android:layout_height="3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
         android:background="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/negra"
-        tools:layout_editor_absoluteY="77dp" />
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@mipmap/negra" />
 
     <TextView
-        android:id="@+id/developer_text"
+        android:id="@+id/realizado_text"
         android:layout_width="380dp"
         android:layout_height="108dp"
+        android:layout_marginTop="16dp"
         android:text="Realizado por los alumnos de 6° CI 1°:"
         android:textColor="#000000"
-        android:textSize="30"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="102dp" />
+        app:layout_constraintTop_toBottomOf="@+id/barra" />
 
     <TextView
-        android:id="@+id/matias_text"
+        android:id="@+id/desarrolladores_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="-Álvarez, Matías"
+        android:text="-Álvarez, Matías\n-Avalos, Leandro\n-Dominguez, Jonathan\n-Pereyra, Mateo"
         android:textColor="#000000"
-        android:textSize="30"
-        app:layout_constraintBottom_toTopOf="@+id/leandro_text"
-        tools:layout_editor_absoluteX="81dp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/realizado_text" />
 
     <TextView
-        android:id="@+id/leandro_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-Avalos, Leandro"
-        android:textColor="#000000"
-        android:textSize="30"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="224dp" />
-
-    <TextView
-        android:id="@+id/jonathan_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-Dominguez, Jonathan"
-        android:textColor="#000000"
-        android:textSize="30"
-        app:layout_constraintTop_toBottomOf="@+id/leandro_text"
-        tools:layout_editor_absoluteX="81dp" />
-
-    <TextView
-        android:id="@+id/mateo_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-Pereyra, Mateo"
-        android:textColor="#000000"
-        android:textSize="30"
-        app:layout_constraintTop_toBottomOf="@+id/jonathan_text"
-        tools:layout_editor_absoluteX="81dp" />
-
-    <TextView
-        android:id="@+id/2020_text"
+        android:id="@+id/anio2020_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2020"
         android:textColor="#000000"
-        android:textSize="30"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="675dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,11 +10,7 @@ public class TerceroConstrucciones extends CursoCicloSuperior {
 
     public TerceroConstrucciones() {
         super(
-                R.string.txt_tercero,
-                new ArrayList<Materia>() {{
-                    add(new Materia("materia 1","simple"));
-                    add(new Materia("materia 2","contraturno"));
-                }},
+                R.string.txt_tercero,"fernandez",
                 R.string.txt_Construcciones
         );
     }

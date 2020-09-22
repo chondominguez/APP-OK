@@ -11,11 +11,7 @@ public class QuintoQuimica extends CursoCicloSuperior {
     public QuintoQuimica(){
 
         super(
-                R.string.txt_quinto,
-                new ArrayList<Materia>() {{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_quinto,"todes",
                 R.string.txt_Quimica
         );
     }

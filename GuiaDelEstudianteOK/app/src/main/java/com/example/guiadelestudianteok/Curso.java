@@ -13,11 +13,11 @@ import java.util.List;
 public abstract class Curso extends AppCompatActivity {
 
     protected int anio;
-    protected List<Materia> materias;
+    protected String descripcion;
 
-    public Curso(int anio, List<Materia> materias) {
+    public Curso(int anio, String descripcion) {
         this.anio = anio;
-        this.materias = materias;
+        this.descripcion = descripcion;
     }
 
     @Override
@@ -28,13 +28,8 @@ public abstract class Curso extends AppCompatActivity {
         TextView  tvCurso = (TextView)findViewById(R.id.tv_curso);
         tvCurso.setText(this.Identificador());
 
-        LinearLayout lyMaterias = (LinearLayout) findViewById(R.id.ly_materias);
-        for (Materia m : materias) {
-            TextView tvMateria = new TextView(getApplicationContext());
-            tvMateria.setText(m.Datos());
-            lyMaterias.addView(tvMateria);
-        }
-        
+        TextView aniotext2 = (TextView)findViewById(R.id.anio_text2);
+        aniotext2.setText(descripcion);
     }
 
     public abstract String Identificador();

@@ -11,11 +11,7 @@ public class SextoQuimica extends CursoCicloSuperior {
     public SextoQuimica(){
 
         super(
-                R.string.txt_sexto,
-                new ArrayList<Materia>() {{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_sexto,"computadora de scioli",
                 R.string.txt_Quimica
         );
     }

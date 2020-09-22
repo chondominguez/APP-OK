@@ -11,11 +11,7 @@ public class CuartoMecanica extends CursoCicloSuperior {
     public CuartoMecanica(){
 
         super(
-                R.string.txt_cuarto,
-                new ArrayList<Materia>(){{
-                    add(new Materia("Materia 1","Simple"));
-                    add(new Materia("Materia 2","Contraturno"));
-                }},
+                R.string.txt_cuarto,"pelele",
                 R.string.txt_Mecanica
         );
     }

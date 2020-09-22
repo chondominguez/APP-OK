@@ -11,11 +11,7 @@ public class CuartoElectronica extends CursoCicloSuperior {
     public CuartoElectronica(){
 
         super(
-                R.string.txt_cuarto,
-                new ArrayList<Materia>(){{
-                    add(new Materia("Materia 1","Simple"));
-                    add(new Materia("Materia 2","Contraturno"));
-                }},
+                R.string.txt_cuarto,"no pa",
                 R.string.txt_Electronica
         );
     }

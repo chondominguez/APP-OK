@@ -11,11 +11,7 @@ public class SextoElectronica extends CursoCicloSuperior {
     public SextoElectronica(){
 
         super(
-                R.string.txt_sexto,
-                new ArrayList<Materia>() {{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_sexto,"promo 2020",
                 R.string.txt_Electronica
         );
     }

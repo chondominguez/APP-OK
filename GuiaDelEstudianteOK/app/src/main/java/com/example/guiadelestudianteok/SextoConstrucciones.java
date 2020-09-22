@@ -11,11 +11,7 @@ public class SextoConstrucciones extends CursoCicloSuperior {
     public SextoConstrucciones(){
 
         super(
-                R.string.txt_sexto,
-                new ArrayList<Materia>() {{
-                    add(new Materia("Materia 1","simple"));
-                    add(new Materia("Materia 2","contraturno"));
-                }},
+                R.string.txt_sexto,"pandemia",
                 R.string.txt_Construcciones
         );
     }
