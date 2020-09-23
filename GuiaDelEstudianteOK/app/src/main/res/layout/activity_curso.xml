@@ -36,6 +36,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -59,32 +60,34 @@
         android:id="@+id/tv_curso"
         android:layout_width="411dp"
         android:layout_height="46dp"
-        android:layout_marginTop="80dp"
         android:gravity="center"
         android:text="@string/txt_vacio"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="273dp"
-        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_curso">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268">
 
         <LinearLayout
             android:id="@+id/ly_materias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/anio_text2"
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:text="TextView"
                 tools:layout_editor_absoluteX="46dp"

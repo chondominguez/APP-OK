@@ -45,4 +45,9 @@ public class MenuEspecialidades extends AppCompatActivity {
         startActivity(q);
     }
 
+    public void IrAInicio(View view){
+        Intent l = new Intent(this, MainActivity.class);
+        startActivity(l);
+    }
+
 }

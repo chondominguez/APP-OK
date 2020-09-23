@@ -25,6 +25,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -38,6 +39,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintHorizontal_bias="0.163"
@@ -59,7 +61,9 @@
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="649dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/barra">
 
@@ -71,35 +75,40 @@
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="normal|bold"
-            app:layout_constraintBottom_toTopOf="@+id/ciclobasico_text"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
 
         <TextView
             android:id="@+id/ciclobasico_text"
-            android:layout_width="315dp"
-            android:layout_height="315dp"
-            android:layout_marginBottom="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/btn_primero"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.142" />
 
         <Button
             android:id="@+id/btn_primero"
             android:layout_width="300dp"
             android:layout_height="100dp"
-            android:layout_marginTop="424dp"
             android:background="@mipmap/boton"
             android:onClick="IrAPrimerAnio"
             android:text="@string/txt_primero"
             android:textAllCaps="false"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -111,12 +120,15 @@
             android:onClick="IrASegundoAnio"
             android:text="@string/txt_segundo"
             android:textAllCaps="false"
+            android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="normal|bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_primero" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.816" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#bc1414"
-    tools:context=".MainActivity" >
+    tools:context=".Developers">
 
     <ImageView
         android:id="@+id/logo"
@@ -23,6 +23,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintHorizontal_bias="0.163"
@@ -36,6 +37,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -59,14 +61,15 @@
         android:id="@+id/realizado_text"
         android:layout_width="380dp"
         android:layout_height="108dp"
-        android:layout_marginTop="16dp"
         android:text="Realizado por los alumnos de 6° CI 1°:"
         android:textColor="#000000"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barra" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
 
     <TextView
         android:id="@+id/desarrolladores_text"
@@ -75,10 +78,12 @@
         android:text="-Álvarez, Matías\n-Avalos, Leandro\n-Dominguez, Jonathan\n-Pereyra, Mateo"
         android:textColor="#000000"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintHorizontal_bias="0.841"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/realizado_text" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367" />
 
     <TextView
         android:id="@+id/anio2020_text"
@@ -89,6 +94,8 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

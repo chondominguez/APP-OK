@@ -2,8 +2,10 @@ package com.example.guiadelestudianteok;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Layout;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,6 +32,11 @@ public abstract class Curso extends AppCompatActivity {
 
         TextView aniotext2 = (TextView)findViewById(R.id.anio_text2);
         aniotext2.setText(descripcion);
+    }
+
+    public void IrAInicio(View view){
+        Intent l = new Intent(this, MainActivity.class);
+        startActivity(l);
     }
 
     public abstract String Identificador();

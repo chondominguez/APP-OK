@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#bc1414"
-    tools:context=".MainActivity" >
-
+    tools:context=".Contact" >
     <ImageView
         android:id="@+id/barra"
         android:layout_width="match_parent"
@@ -25,6 +24,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -38,6 +38,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintHorizontal_bias="0.163"
@@ -59,140 +60,161 @@
         android:id="@+id/telefono_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="  Teléfono:\n 4331-5249"
+        android:gravity="center"
+        android:text="Teléfono:\n 4331-5249"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/barra" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
 
     <TextView
         android:id="@+id/direccion_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="                 Dirección:\n Paseo Colón 650 C1063ACT"
+        android:gravity="center"
+        android:text="Dirección:\n Paseo Colón 650 C1063ACT"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paginaweb_text" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
 
     <TextView
         android:id="@+id/paginaweb_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="                Página Web:\n http://www.ottokrause.edu.ar/"
+        android:gravity="center"
+        android:text="Página Web:\n http://www.ottokrause.edu.ar/"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correo_text" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
 
     <TextView
         android:id="@+id/correo_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="               Correo:\n info@ottokrause.edu.ar"
+        android:gravity="center"
+        android:text="Correo:\n info@ottokrause.edu.ar"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefono_text" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
 
     <TextView
         android:id="@+id/instragram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:text="etn1_otto_krause"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ubicacion" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
 
     <TextView
         android:id="@+id/facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
         android:text="ET N° 1 OTTO KRAUSE"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.779"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instragram" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
 
     <TextView
         android:id="@+id/twitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
         android:text="@ETN1OttoKrause"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/ubicacion"
         android:layout_width="367dp"
         android:layout_height="127dp"
-        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/direccion_text" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/instagram_button"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
         android:background="#bc1414"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ubicacion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695"
         app:srcCompat="@mipmap/instagram" />
 
     <ImageButton
         android:id="@+id/facebook_button"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
         android:background="#bc1414"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instagram_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832"
         app:srcCompat="@mipmap/facebook" />
 
     <ImageButton
         android:id="@+id/twitter_button"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
         android:background="#bc1414"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/facebook_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
         app:srcCompat="@mipmap/twitter" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

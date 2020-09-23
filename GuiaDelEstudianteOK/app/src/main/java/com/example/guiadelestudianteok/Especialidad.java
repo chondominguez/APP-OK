@@ -61,4 +61,14 @@ public abstract class Especialidad extends AppCompatActivity {
         Intent e = new Intent(this,anios[3]);
         startActivity(e);
     }
+
+    public void IrAInicio(View view){
+        Intent l = new Intent(this, MainActivity.class);
+        startActivity(l);
+    }
+
+    public void IrAEspecialidades(View view){
+        Intent l = new Intent(this, MenuEspecialidades.class);
+        startActivity(l);
+    }
 }

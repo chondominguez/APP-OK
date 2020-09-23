@@ -6,24 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MenuCicloBasico extends AppCompatActivity {
+public class Developers extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_ciclo_basico);
+        setContentView(R.layout.activity_developers);
     }
-
-    public void IrAPrimerAnio(View view){
-        Intent l = new Intent(this, Primero.class);
-        startActivity(l);
-    }
-
-    public void IrASegundoAnio(View view){
-        Intent n = new Intent(this,Segundo.class);
-        startActivity(n);
-    }
-
     public void IrAInicio(View view){
         Intent l = new Intent(this, MainActivity.class);
         startActivity(l);

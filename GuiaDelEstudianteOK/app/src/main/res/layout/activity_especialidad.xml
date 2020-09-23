@@ -26,6 +26,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAInicio"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -39,6 +40,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="IrAEspecialidades"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintHorizontal_bias="0.163"
@@ -59,7 +61,8 @@
     <ScrollView
         android:id="@+id/scrv1"
         android:layout_width="0dp"
-        android:layout_height="279dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +72,7 @@
             android:id="@+id/ly_presentacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -87,30 +91,9 @@
             <TextView
                 android:id="@+id/txv_Descripcion"
                 android:layout_width="match_parent"
-                android:layout_height="159dp"
+                android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:text="@string/txt_vacio" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:id="@+id/scrv2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrv1">
-
-        <LinearLayout
-            android:id="@+id/ly_anios"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btn_tercero"
@@ -119,6 +102,7 @@
                 android:background="@mipmap/boton"
                 android:onClick="IrATercero"
                 android:text="@string/txt_tercero"
+                android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="normal|bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -133,6 +117,7 @@
                 android:background="@mipmap/boton"
                 android:onClick="IrACuarto"
                 android:text="@string/txt_cuarto"
+                android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="normal|bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -147,6 +132,7 @@
                 android:background="@mipmap/boton"
                 android:onClick="IrAQuinto"
                 android:text="@string/txt_quinto"
+                android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="normal|bold"
                 tools:layout_editor_absoluteX="79dp"
@@ -159,6 +145,7 @@
                 android:background="@mipmap/boton"
                 android:onClick="IrASexto"
                 android:text="@string/txt_sexto"
+                android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="normal|bold"
                 app:layout_constraintEnd_toEndOf="parent"
