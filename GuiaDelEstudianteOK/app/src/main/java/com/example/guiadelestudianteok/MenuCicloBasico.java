@@ -20,8 +20,8 @@ public class MenuCicloBasico extends AppCompatActivity {
     }
 
     public void IrASegundoAnio(View view){
-        Intent n = new Intent(this,Segundo.class);
-        startActivity(n);
+        Intent l = new Intent(this,Segundo.class);
+        startActivity(l);
     }
 
     public void IrAInicio(View view){

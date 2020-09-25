@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ public abstract class Curso extends AppCompatActivity {
 
     protected int anio;
     protected String descripcion;
+    protected ImageButton goback;
 
     public Curso(int anio, String descripcion) {
         this.anio = anio;
@@ -37,6 +39,10 @@ public abstract class Curso extends AppCompatActivity {
     public void IrAInicio(View view){
         Intent l = new Intent(this, MainActivity.class);
         startActivity(l);
+    }
+
+    public void Volver(View view){
+        onBackPressed();
     }
 
     public abstract String Identificador();

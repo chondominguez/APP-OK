@@ -5,7 +5,7 @@ public class Quimica extends Especialidad {
         super(
                 R.string.txt_Quimica,
                 "Descripcionrtjh5kyni jiejnbigtuewnbgtuiw uiebguiwbeg er uigergbuibg uigwebuirgb",
-                R.mipmap.escudo_ok,
+                R.mipmap.quimicalogo,
                 new Class[]{TerceroQuimica.class, CuartoQuimica.class, QuintoQuimica.class, SextoQuimica.class}
         );
     }

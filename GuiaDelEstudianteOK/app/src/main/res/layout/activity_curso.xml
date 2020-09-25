@@ -23,6 +23,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:background="#bc1414"
+        android:onClick="Volver"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintHorizontal_bias="0.163"
@@ -56,42 +57,40 @@
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:srcCompat="@mipmap/negra" />
 
-    <TextView
-        android:id="@+id/tv_curso"
-        android:layout_width="411dp"
-        android:layout_height="46dp"
-        android:gravity="center"
-        android:text="@string/txt_vacio"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="273dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268">
+        app:layout_constraintTop_toBottomOf="@+id/barra"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:id="@+id/ly_materias"
+            android:id="@+id/LinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_curso"
+                android:layout_width="411dp"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:text="@string/txt_vacio"
+                android:textColor="#000000"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/anio_text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="normal"
                 tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="89dp" />
+                tools:layout_editor_absoluteY="89dp"
+                tools:text="rellenar" />
         </LinearLayout>
     </ScrollView>
 

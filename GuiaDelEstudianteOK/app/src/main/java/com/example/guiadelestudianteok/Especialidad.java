@@ -18,11 +18,8 @@ public abstract class Especialidad extends AppCompatActivity {
 
 
     Especialidad(int nombre, String descripcion, int escudo, Class[] anios){
-        if(anios.length == 4)
-            this.anios = anios;
-        else
-            throw new Error("deben ser 4 años en C.S.");
 
+        this.anios = anios;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.escudo = escudo;
@@ -43,8 +40,8 @@ public abstract class Especialidad extends AppCompatActivity {
     }
 
     public void IrATercero(View view){
-        Intent i = new Intent(this, anios[0]);
-        startActivity(i);
+        Intent l = new Intent(this, anios[0]);
+        startActivity(l);
     }
 
     public void IrACuarto(View view){
@@ -53,13 +50,13 @@ public abstract class Especialidad extends AppCompatActivity {
     }
 
     public  void IrAQuinto(View view){
-        Intent n =new Intent(this, anios[2]);
-        startActivity(n);
+        Intent l =new Intent(this, anios[2]);
+        startActivity(l);
     }
 
     public void IrASexto(View view){
-        Intent e = new Intent(this,anios[3]);
-        startActivity(e);
+        Intent l = new Intent(this,anios[3]);
+        startActivity(l);
     }
 
     public void IrAInicio(View view){
@@ -67,8 +64,7 @@ public abstract class Especialidad extends AppCompatActivity {
         startActivity(l);
     }
 
-    public void IrAEspecialidades(View view){
-        Intent l = new Intent(this, MenuEspecialidades.class);
-        startActivity(l);
+    public void Volver(View view){
+        onBackPressed();
     }
 }

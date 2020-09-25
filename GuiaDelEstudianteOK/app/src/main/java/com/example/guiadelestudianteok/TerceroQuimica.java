@@ -11,7 +11,9 @@ public class TerceroQuimica extends CursoCicloSuperior {
     public TerceroQuimica(){
 
         super(
-                R.string.txt_tercero,"mateo",
+                R.string.txt_tercero,"Historia, Geografía, Educación Física, Educación Ciudadana, Inglés, " +
+                        "Lengua y Literatura, Matemática, Física, Tecnología de la Representación, Química, " +
+                        "Taller de Tecnología y del Control, Taller",
                 R.string.txt_Quimica
         );
     }

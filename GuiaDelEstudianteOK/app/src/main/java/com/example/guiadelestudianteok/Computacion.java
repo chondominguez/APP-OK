@@ -5,7 +5,7 @@ public class Computacion extends Especialidad {
         super(
                 R.string.txt_Computacion,
                 "Descripcionrtjh5kyni jiejnbigtuewnbgtuiw uiebguiwbeg er uigergbuibg uigwebuirgb",
-                R.mipmap.escudo_ok,
+                R.mipmap.computacionlogo,
                 new Class[]{ TerceroComputacion.class, CuartoComputacion.class, QuintoComputacion.class, SextoComputacion.class }
         );
     }

@@ -6,7 +6,7 @@ public class Electronica extends Especialidad {
         super(
                 R.string.txt_Electronica,
                 "Descripcionrtjh5kyni jiejnbigtuewnbgtuiw uiebguiwbeg er uigergbuibg uigwebuirgb",
-                R.mipmap.escudo_ok,
+                R.mipmap.electronicalogo,
                 new Class[]{ TerceroElectronica.class, CuartoElectronica.class, QuintoElectronica.class, SextoElectronica.class}
         );
     }

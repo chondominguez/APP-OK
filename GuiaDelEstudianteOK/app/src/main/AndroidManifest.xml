@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/logoapp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Developers"></activity>
+        <activity android:name=".Inicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Developers" />
         <activity android:name=".Contact" />
         <activity android:name=".SextoQuimica" />
         <activity android:name=".SextoMecanica" />
@@ -48,15 +55,7 @@
         <activity android:name=".Electronica" />
         <activity android:name=".Electrica" />
         <activity android:name=".Computacion" />
-        <activity android:name=".PlantillaEspecialidades" />
-        <activity android:name=".ActivityEspecialidades" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

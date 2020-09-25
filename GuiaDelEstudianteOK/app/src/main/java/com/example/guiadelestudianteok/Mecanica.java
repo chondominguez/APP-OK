@@ -6,7 +6,7 @@ public class Mecanica extends Especialidad {
         super(
                 R.string.txt_Mecanica,
                 "Descripcionrtjh5kyni jiejnbigtuewnbgtuiw uiebguiwbeg er uigergbuibg uigwebuirgb",
-                R.mipmap.escudo_ok,
+                R.mipmap.mecanicalogo,
                 new Class[]{ TerceroMecanica.class, CuartoMecanica.class, QuintoMecanica.class, SextoMecanica.class}
         );
     }

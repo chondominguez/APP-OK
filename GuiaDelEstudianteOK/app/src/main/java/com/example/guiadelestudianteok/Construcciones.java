@@ -6,11 +6,10 @@ public class Construcciones extends Especialidad {
         super(
                 R.string.txt_Construcciones,
                 "Descripcionrtjh5kyni jiejnbigtuewnbgtuiw uiebguiwbeg er uigergbuibg uigwebuirgb",
-                R.mipmap.escudo_ok,
+                R.mipmap.construccioneslogo,
                 new Class[]{ TerceroConstrucciones.class, CuartoConstrucciones.class, QuintoConstrucciones.class, SextoConstrucciones.class }
         );
     }
 }
 
 
-// tove que tapar todo esto para probar lo de computacion

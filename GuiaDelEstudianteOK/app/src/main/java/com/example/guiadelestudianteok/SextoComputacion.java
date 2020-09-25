@@ -11,7 +11,9 @@ public class SextoComputacion extends CursoCicloSuperior {
     public SextoComputacion(){
 
         super(
-                R.string.txt_sexto,"macri gato",
+                R.string.txt_sexto,"Educación Física, Inglés, Ciudadanía y Trabajo, Ciencia y Tecnología, " +
+                        "Matemática, Gestión de los Procesos Productivos, Desarrollo de Sistemas, " +
+                        "Programación sobre Redes, Administración de Sistemas y Redes, Prácticas Profesionalizantes.",
                 R.string.txt_Computacion
         );
     }

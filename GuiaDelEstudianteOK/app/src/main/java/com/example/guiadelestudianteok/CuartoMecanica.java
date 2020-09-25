@@ -11,7 +11,9 @@ public class CuartoMecanica extends CursoCicloSuperior {
     public CuartoMecanica(){
 
         super(
-                R.string.txt_cuarto,"pelele",
+                R.string.txt_cuarto,"Educación Física, Inglés, Lengua y Literatura, Matemática, " +
+                        "Dibujo Mecánico I, Hidráulica Industrial, Electrotecnia, Química Aplicada, " +
+                        "Tecnología de los Materiales, Mecánica Técnica, Taller",
                 R.string.txt_Mecanica
         );
     }
