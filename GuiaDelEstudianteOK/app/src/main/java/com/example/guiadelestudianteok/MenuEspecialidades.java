@@ -16,8 +16,8 @@ public class MenuEspecialidades extends AppCompatActivity {
     }
 
     public void IrAComputacion(View view){
-        Intent i = new Intent(this, Computacion.class);
-        startActivity(i);
+        Intent l = new Intent(this, Computacion.class);
+        startActivity(l);
     }
 
     public void IrAConstrucciones(View view){
@@ -26,23 +26,23 @@ public class MenuEspecialidades extends AppCompatActivity {
     }
 
     public void IrAElectrica(View view){
-        Intent n = new Intent(this, Electrica.class);
-        startActivity(n);
+        Intent l = new Intent(this, Electrica.class);
+        startActivity(l);
     }
 
     public void IrAElectronica(View view){
-        Intent k = new Intent(this, Electronica.class);
-        startActivity(k);
+        Intent l = new Intent(this, Electronica.class);
+        startActivity(l);
     }
 
     public void IrAMecanica(View view){
-        Intent m = new Intent(this,Mecanica.class);
-        startActivity(m);
+        Intent l = new Intent(this,Mecanica.class);
+        startActivity(l);
     }
 
     public void IrAQuimica(View view){
-        Intent q = new Intent(this,Quimica.class);
-        startActivity(q);
+        Intent l = new Intent(this,Quimica.class);
+        startActivity(l);
     }
 
     public void IrAInicio(View view){
