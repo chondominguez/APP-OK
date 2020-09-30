@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bc1414"
+    tools:context=".Especialidad">
+
+
+    <ImageView
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@mipmap/negra" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:background="#bc1414"
+        android:onClick="IrAInicio"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/home" />
+
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:background="#bc1414"
+        android:onClick="Volver"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/goback" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="111dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_NombreEsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Rellenar"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/img_Escudo"
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                android:contentDescription="@string/txt_escudo"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/txv_Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="@string/txt_vacio"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/btn_tercero"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/boton"
+                android:onClick="IrATercero"
+                android:text="@string/txt_tercero"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="374dp" />
+
+            <Button
+                android:id="@+id/btn_cuarto"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/boton"
+                android:onClick="IrACuarto"
+                android:text="@string/txt_cuarto"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="442dp" />
+
+            <Button
+                android:id="@+id/btn_quinto"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/boton"
+                android:onClick="IrAQuinto"
+                android:text="@string/txt_quinto"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="79dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+            <Button
+                android:id="@+id/btn_sexto"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/boton"
+                android:onClick="IrASexto"
+                android:text="@string/txt_sexto"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="583dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
