@@ -11,9 +11,17 @@ public class QuintoComputacion extends CursoCicloSuperior {
     public QuintoComputacion(){
 
         super(
-                R.string.txt_quinto,"Educación Física, Inglés, Lengua y Literatura, Matemática, " +
-                        "Economía y Gestión de las Organizaciones, Administración y Gestión de Base de Datos, " +
-                        "Análisis de Sistemas, Laboratorio de Programación Orientada a Objetos, Redes, Proyecto Informático II",
+                R.string.txt_quinto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Economía y Gestión de las Organizaciones\n" +
+                        "-Administración y Gestión de Base de Datos\n" +
+                        "-Análisis de Sistemas\n" +
+                        "-Laboratorio de Programación Orientada a Objetos\n" +
+                        "-Redes\n" +
+                        "-Proyecto Informático II\n",
                 R.string.txt_Computacion
         );
     }

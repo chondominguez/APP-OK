@@ -11,11 +11,17 @@ public class SextoElectronica extends CursoCicloSuperior {
     public SextoElectronica(){
 
         super(
-                R.string.txt_sexto,"Educación Física, Ciudadanía y Trabajo, Ciencia y Tecnología, " +
-                        "Gestión de los Procesos Productivos, Economía y Gestión de las Organizaciones, " +
-                        "Redes y Sistemas de Comunicación, Sistemas Electrónicos Embebidos, " +
-                        "Sistemas de Control de Procesos, Procesamiento Digital de Imagen y Sonido, " +
-                        "Laboratorio de Mediciones y Ensayos III, Prácticas Profesionalizantes",
+                R.string.txt_sexto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Ciudadanía y Trabajo, Ciencia y Tecnología\n" +
+                        "-Gestión de los Procesos Productivos\n" +
+                        "-Economía y Gestión de las Organizaciones\n" +
+                        "-Redes y Sistemas de Comunicación\n" +
+                        "-Sistemas Electrónicos Embebidos\n" +
+                        "-Sistemas de Control de Procesos\n" +
+                        "-Procesamiento Digital de Imagen y Sonido\n" +
+                        "-Laboratorio de Mediciones y Ensayos III\n" +
+                        "-Prácticas Profesionalizantes\n",
                 R.string.txt_Electronica
         );
     }

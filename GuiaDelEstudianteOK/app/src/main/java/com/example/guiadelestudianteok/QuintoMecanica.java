@@ -11,9 +11,18 @@ public class QuintoMecanica extends CursoCicloSuperior {
     public QuintoMecanica(){
 
         super(
-                R.string.txt_quinto,"Educación Física, Inglés, Lengua y Literatura, Matemática, " +
-                        "Dibujo Mecánico II, Mecanismos, Resistencia de Materiales, Laboratorio de Ensayo de Materiales, " +
-                        "Termodinámica, Taller, Prácticas Profesionalizantes",
+                R.string.txt_quinto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Dibujo Mecánico II\n" +
+                        "-Mecanismos\n" +
+                        "-Resistencia de Materiales\n" +
+                        "-Laboratorio de Ensayo de Materiales\n" +
+                        "-Termodinámica\n" +
+                        "-Taller\n" +
+                        "-Prácticas Profesionalizantes\n",
                 R.string.txt_Mecanica
         );
     }

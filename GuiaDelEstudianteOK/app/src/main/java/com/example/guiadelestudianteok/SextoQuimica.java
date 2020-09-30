@@ -11,11 +11,18 @@ public class SextoQuimica extends CursoCicloSuperior {
     public SextoQuimica(){
 
         super(
-                R.string.txt_sexto,"Educación Física, Ciencia y Tecnología, Química Cuantitativa e Instrumental, " +
-                        "Trabajo Práctico de Química Cuantitativa e Instrumental, Química Orgánica y Bio-Orgánica, " +
-                        "Trabajo Práctico de Química Orgánica y Bio-Orgánica, Química Industrial II, " +
-                        "Trabajo Práctico de Química Industrial II, Tecnología de los Alimentos y Bio Tecnología, " +
-                        "Trabajo Práctico de Tecnología de los Alimentos y Bio Tecnología, Prácticas Profesionalizantes.",
+                R.string.txt_sexto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Ciencia y Tecnología\n" +
+                        "-Química Cuantitativa e Instrumental\n" +
+                        "-Trabajo Práctico de Química Cuantitativa e Instrumental\n" +
+                        "-Química Orgánica y Bio-Orgánica\n" +
+                        "-Trabajo Práctico de Química Orgánica y Bio-Orgánica\n" +
+                        "-Química Industrial II\n" +
+                        "-Trabajo Práctico de Química Industrial II\n" +
+                        "-Tecnología de los Alimentos y Bio Tecnología\n" +
+                        "-Trabajo Práctico de Tecnología de los Alimentos y Bio Tecnología\n" +
+                        "-Prácticas Profesionalizantes\n",
                 R.string.txt_Quimica
         );
     }

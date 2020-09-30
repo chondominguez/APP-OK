@@ -99,7 +99,8 @@
                 android:text="@string/txt_vacio"
                 android:textColor="#000000"
                 android:textSize="18sp"
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                android:typeface="monospace" />
 
             <Button
                 android:id="@+id/btn_tercero"

@@ -11,8 +11,17 @@ public class CuartoElectrica extends CursoCicloSuperior {
     public CuartoElectrica(){
 
         super(
-                R.string.txt_cuarto,"Educación Física, Inglés, Lengua y Literatura, Matemática, Circuitos Eléctricos y Mediciones, " +
-                        "Circuitos Electromagnéticos y Ensayos, Electrónica, Técnicas de Laboratorio, Mecánica Aplicada a los Mecanismos, Taller",
+                R.string.txt_cuarto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Circuitos Eléctricos y Mediciones\n" +
+                        "-Circuitos Electromagnéticos y Ensayos\n" +
+                        "-Electrónica\n" +
+                        "-Técnicas de Laboratorio\n" +
+                        "-Mecánica Aplicada a los Mecanismos\n" +
+                        "-Taller\n",
                 R.string.txt_Electrica
         );
     }

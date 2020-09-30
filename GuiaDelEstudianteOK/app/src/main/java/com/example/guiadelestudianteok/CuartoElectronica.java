@@ -11,9 +11,16 @@ public class CuartoElectronica extends CursoCicloSuperior {
     public CuartoElectronica(){
 
         super(
-                R.string.txt_cuarto,"Educación Física, Inglés, Lengua y Literatura, Matemática, " +
-                        "Laboratorio de Mediciones y Ensayos I, Técnicas Digitales, Circuitos Electrónicos I, " +
-                        "Sistemas Electrónicos Analógicos, Taller",
+                R.string.txt_cuarto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Laboratorio de Mediciones y Ensayos I\n" +
+                        "-Técnicas Digitales\n" +
+                        "-Circuitos Electrónicos I\n" +
+                        "-Sistemas Electrónicos Analógicos\n" +
+                        "-Taller\n",
                 R.string.txt_Electronica
         );
     }

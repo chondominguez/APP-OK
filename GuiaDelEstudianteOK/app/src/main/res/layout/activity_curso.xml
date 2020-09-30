@@ -85,9 +85,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
+                android:fontFamily="monospace"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="normal"
+                android:typeface="normal"
                 tools:layout_editor_absoluteX="46dp"
                 tools:layout_editor_absoluteY="89dp"
                 tools:text="rellenar" />

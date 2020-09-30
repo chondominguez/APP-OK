@@ -11,10 +11,20 @@ public class CuartoConstrucciones extends CursoCicloSuperior {
     public CuartoConstrucciones(){
 
         super(
-                R.string.txt_cuarto, "Educación Física, Inglés, Ciudadanía y Trabajo, Lengua y Literatura, Matemática, " +
-                        "Química Aplicada, Teoría de la Arquitectura I y Representación Gráfica, Práctica Proyectual Integradora I, " +
-                        "Taller de Técnicas, Sistemas Constructivos e Instalaciones II, Tecnología de los Materiales, " +
-                        "Estática, Resistencia de los Materiales.",
+                R.string.txt_cuarto, "Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Ciudadanía y Trabajo\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Química Aplicada\n" +
+                        "-Teoría de la Arquitectura I y Representación Gráfica\n" +
+                        "-Práctica Proyectual Integradora I\n" +
+                        "-Taller de Técnicas\n" +
+                        "-Sistemas Constructivos e Instalaciones II\n" +
+                        "-Tecnología de los Materiales\n" +
+                        "-Estática\n" +
+                        "-Resistencia de los Materiales\n",
                 R.string.txt_Construcciones
         );
     }

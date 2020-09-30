@@ -11,12 +11,21 @@ public class SextoMecanica extends CursoCicloSuperior {
     public SextoMecanica(){
 
         super(
-                R.string.txt_sexto,"Educación Física, Inglés, Ciudadanía y Trabajo, Ciencia y Tecnología, " +
-                        "Gestión de los Procesos Productivos, Economía y Gestión de las Organizaciones, " +
-                        "Sistemas de Elevación y Transporte, Instalaciones Industriales y Mantenimiento, " +
-                        "Instalaciones Termomecánicas, Instrumentación y Ensayo de Máquinas y Motores, " +
-                        "Proyecto Mecánico, Tecnología de Fabricación, Seguridad e Higiene Industrial y Medio Ambiente, " +
-                        "Taller, Prácticas Profesionalizantes.",
+                R.string.txt_sexto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Ciudadanía y Trabajo, Ciencia y Tecnología\n" +
+                        "-Gestión de los Procesos Productivos\n" +
+                        "-Economía y Gestión de las Organizaciones\n" +
+                        "-Sistemas de Elevación y Transporte\n" +
+                        "-Instalaciones Industriales y Mantenimiento\n" +
+                        "-Instalaciones Termomecánicas\n" +
+                        "-Instrumentación y Ensayo de Máquinas y Motores\n" +
+                        "-Proyecto Mecánico\n" +
+                        "-Tecnología de Fabricación\n" +
+                        "-Seguridad e Higiene Industrial y Medio Ambiente\n" +
+                        "-Taller\n" +
+                        "-Prácticas Profesionalizantes\n",
                 R.string.txt_Mecanica
         );
     }

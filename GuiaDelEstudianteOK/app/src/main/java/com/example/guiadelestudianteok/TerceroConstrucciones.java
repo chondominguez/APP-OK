@@ -10,9 +10,20 @@ public class TerceroConstrucciones extends CursoCicloSuperior {
 
     public TerceroConstrucciones() {
         super(
-                R.string.txt_tercero,"Historia, Geografía, Educación Física, Educación Física, Inglés, " +
-                        "Lengua y Literatura, Matemática, Física, Tecnología de la Representación, Química, " +
-                        "Taller de Tecnología del Control, Taller de Técnicas, Sistemas Constructivos e Instalaciones I",
+                R.string.txt_tercero,"Materias:\n\n" +
+                        "-Historia\n" +
+                        "-Geografía\n" +
+                        "-Educación Física\n" +
+                        "-Educación Ciudadana\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Física\n" +
+                        "-Tecnología de la Representación\n" +
+                        "-Química\n" +
+                        "-Taller de Tecnología del Control\n" +
+                        "-Taller de Técnicas\n" +
+                        "-Sistemas Constructivos e Instalaciones I\n",
                 R.string.txt_Construcciones
         );
     }

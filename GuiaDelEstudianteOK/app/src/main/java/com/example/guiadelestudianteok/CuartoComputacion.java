@@ -11,8 +11,19 @@ public class CuartoComputacion extends CursoCicloSuperior {
     public CuartoComputacion(){
 
         super(
-                R.string.txt_cuarto, "Historia, Geografía, Educación Física, Educación Física, Inglés, Lengua y Literatura, Matemática, Física, " +
-                        "Tecnología de la Representación, Química, Taller de Tecnología del Control, Taller (Diseño Multimedia, Programación) ",
+                R.string.txt_cuarto, "Materias:\n\n" +
+                        "-Historia\n" +
+                        "-Geografía\n" +
+                        "-Educación Física\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Física\n" +
+                        "-Tecnología de la Representación\n" +
+                        "-Química\n" +
+                        "-Taller de Tecnología del Control\n" +
+                        "-Taller (Diseño Multimedia, Programación)\n",
                 R.string.txt_Computacion
         );
     }

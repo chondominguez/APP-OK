@@ -9,9 +9,19 @@ import java.util.ArrayList;
 public class TerceroComputacion extends CursoCicloSuperior {
     public TerceroComputacion() {
         super(
-                R.string.txt_tercero,"Historia, Geografía, Educación Física, Educación Física, Inglés, " +
-                        "Lengua y Literatura, Matemática, Física, Tecnología de la Representación, Química, " +
-                        "Taller de Tecnología del Control, Taller (Diseño Multimedia, Programación) ",
+                R.string.txt_tercero,"Materias:\n\n" +
+                        "-Historia\n" +
+                        "-Geografía\n" +
+                        "-Educación Física\n" +
+                        "-Educación Ciudanana\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Física\n" +
+                        "-Tecnología de la Representación\n" +
+                        "-Química\n" +
+                        "-Taller de Tecnología del Control\n" +
+                        "-Taller (Diseño Multimedia, Programación)\n",
                 R.string.txt_Computacion
         );
     }

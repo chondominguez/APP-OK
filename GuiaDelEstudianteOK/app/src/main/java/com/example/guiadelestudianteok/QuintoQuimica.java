@@ -11,10 +11,19 @@ public class QuintoQuimica extends CursoCicloSuperior {
     public QuintoQuimica(){
 
         super(
-                R.string.txt_quinto,"Educación Física, Inglés, Lengua y Literatura, Matemática, " +
-                        "Gestión de los Procesos Productivos, Laboratorio de Instrumental y Certificación de Normas, " +
-                        "Química Analítica Cualitativa, Trabajo Práctico de Química Analítica Cualitativa, Química Orgánica I, " +
-                        "Trabajo Práctico de Química Orgánica, Química Industrial I, Trabajo Práctico de Química Industrial I.",
+                R.string.txt_quinto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Gestión de los Procesos Productivos\n" +
+                        "-Laboratorio de Instrumental y Certificación de Normas\n" +
+                        "-Química Analítica Cualitativa\n" +
+                        "-Trabajo Práctico de Química Analítica Cualitativa\n" +
+                        "-Química Orgánica I\n" +
+                        "-Trabajo Práctico de Química Orgánica\n" +
+                        "-Química Industrial I\n" +
+                        "-Trabajo Práctico de Química Industrial I\n",
                 R.string.txt_Quimica
         );
     }

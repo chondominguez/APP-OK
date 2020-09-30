@@ -11,10 +11,17 @@ public class SextoElectrica extends CursoCicloSuperior {
     public SextoElectrica(){
 
         super(
-                R.string.txt_sexto,"Educación Física, Ciudadanía y Trabajo, Ciencia y Tecnología, Gestión de los Procesos Productivos, " +
-                        "Control de Máquinas Eléctricas y Accionamientos, Generación y Distribución de la Energía Eléctrica, " +
-                        "Electrónica Aplicada, Proyecto de Instalaciones Eléctricas, Máquinas Sincrónicas y Especiales, " +
-                        "Taller, Prácticas Profesionalizantes",
+                R.string.txt_sexto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Ciudadanía y Trabajo, Ciencia y Tecnología\n" +
+                        "-Gestión de los Procesos Productivos\n" +
+                        "-Control de Máquinas Eléctricas y Accionamientos\n" +
+                        "-Generación y Distribución de la Energía Eléctrica\n" +
+                        "-Electrónica Aplicada\n" +
+                        "-Proyecto de Instalaciones Eléctricas\n" +
+                        "-Máquinas Sincrónicas y Especiales\n" +
+                        "-Taller\n" +
+                        "-Prácticas Profesionalizantes\n",
                 R.string.txt_Electrica
         );
     }

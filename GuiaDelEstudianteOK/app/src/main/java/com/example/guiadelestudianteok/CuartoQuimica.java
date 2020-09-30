@@ -11,10 +11,21 @@ public class CuartoQuimica extends CursoCicloSuperior {
     public CuartoQuimica(){
 
         super(
-                R.string.txt_cuarto,"Educación Física, Inglés, Ciudadanía y Trabajo, Lengua y Literatura, Matemática, " +
-                        "Economía y Gestión de las Organizaciones, Química General, Trabajo Práctico de Química General, " +
-                        "Química Inorgánica, Trabajo Práctico de Química Inorgánica, Física Aplicada, Trabajo Práctico de Física Aplicada, " +
-                        "Procesos y Operaciones Químicas, Trabajo Práctico de Procesos y Operaciones Químicas.",
+                R.string.txt_cuarto,"Materias:\n\n" +
+                        "-Educación Física\n" +
+                        "-Inglés\n" +
+                        "-Ciudadanía y Trabajo\n" +
+                        "-Lengua y Literatura\n" +
+                        "-Matemática\n" +
+                        "-Economía y Gestión de las Organizaciones\n" +
+                        "-Química General\n" +
+                        "-Trabajo Práctico de Química General\n" +
+                        "-Química Inorgánica\n" +
+                        "-Trabajo Práctico de Química Inorgánica\n" +
+                        "-Física Aplicada\n" +
+                        "-Trabajo Práctico de Física Aplicada\n" +
+                        "-Procesos y Operaciones Químicas\n" +
+                        "-Trabajo Práctico de Procesos y Operaciones Químicas\n",
                 R.string.txt_Quimica
         );
     }
