@@ -15,7 +15,7 @@ public class CuartoComputacion extends CursoCicloSuperior {
                         "-Historia\n" +
                         "-Geografía\n" +
                         "-Educación Física\n" +
-                        "-Educación Física\n" +
+                        "-Educación Ciudadana\n" +
                         "-Inglés\n" +
                         "-Lengua y Literatura\n" +
                         "-Matemática\n" +
